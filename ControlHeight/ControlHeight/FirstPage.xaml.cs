@@ -14,6 +14,14 @@ namespace ControlHeight
         {
             //var t = entryDefault.Height.ToString(); 
             InitializeComponent();
+            new Button().Clicked += FirstPage_Clicked;
+        }
+
+        void FirstPage_Clicked(object sender, EventArgs e)
+        {
+            txtLabel.Text = entryDefault.Height.ToString();
+
+            var t = ((VisualElement)entryDefault).Height; 
         }
 
         public override SizeRequest GetSizeRequest(double widthConstraint, double heightConstraint)

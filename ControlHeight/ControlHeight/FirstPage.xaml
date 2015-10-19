@@ -5,6 +5,7 @@
   <StackLayout>
   <Entry Text="This is a default entry control" x:Name="entryDefault"/>
   <Label Text="Height is: " VerticalOptions="Center" HorizontalOptions="Center" x:Name="txtLabel"/>
+    <Button Text="Click Me to find the height" Clicked="FirstPage_Clicked"/>
   </StackLayout>
   
 </ContentPage>
